@@ -1,286 +1,129 @@
-/* Basic */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    /* height: 2000px; */
-    min-width: 320px;
-    font-family: 'Dosis', sans-serif;
-    font-size: 18px;
-    line-height: 28px;
-    color: #5A6671;
-}
-
-a {
-    color: #5A6671;
-}
-
-a:hover,
-a:active,
-a:focus {
-    color: #49535b;
-    text-decoration: none;
-}
-
-/* Utility */
-.responsive {
-    max-width: 100%;
-}
-
-.clearfix:before,
-.clearfix::after {
-    content: " ";
-    display: table;
-}
-
-.clearfix::after {
-    clear: both;
-}
-
-.relative {
-    position: relative;
-}
-
-.float-left {
-    float: left;
-    height: 100%;
-}
-
-.w-100 {
-    width: 100%;
-}
-
-.w-80 {
-    width: 80%;
-}
-
-.w-50 {
-    width: 50%;
-}
-
-.w-30 {
-    width: 30%;
-}
-
-.ml-5perc {
-    margin-left: 5%;
-}
-
-.mt-20 {
-    margin-top: 20px;
-}
-
-.mb-20 {
-    margin-bottom: 20px;
-}
-
-.mt-40 {
-    margin-top: 40px;
-}
-
-.mb-40 {
-    margin-bottom: 40px;
-}
-
-.mt-60 {
-    margin-top: 60px;
-}
-
-.mb-60 {
-    margin-bottom: 60px;
-}
-
-.pt-40 {
-    padding-top: 40px;
-}
-
-.pb-40 {
-    padding-bottom: 40px;
-}
-
-.pt-60 {
-    padding-top: 60px;
-}
-
-.pb-60 {
-    padding-bottom: 60px;
-}
-
-.bg-blue {
-    background: #ECF5FE;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px;
-    background: #0081FF;
-    color: white;
-    text-decoration: none;
-}
-
-.btn-rounded {
-    border-radius: 30px;
-}
-
-.icon-bar {
-    background-color: #ccc;
-}
-
-.align-absolute {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-}
-
-/* Typografy */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 600;
-    color: #283F5B;
-}
-
-h1 {
-    font-size: 50px;
-    line-height: 100%;
-}
-
-h2 {
-    font-size: 40px;
-    line-height: 100%;
-}
-
-h4 {
-    font-size: 25px;
-    line-height: 100%;
-}
-
-.h2--line::after {
-    content: '';
-    display: table;
-    height: 5px;
-    width: 50px;
-    margin: 20px auto;
-    background: #0581FF;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.text-left {
-    text-align: left;
-}
-
 /* Layout */
+body {
+  /* height: 2000px; */
+  min-width: 320px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #5A6671;
+}
+
 .container {
-    padding: 0 10%;
+  padding: 0 10%;
 }
-
-/* 22 righe */
-#iphone {
-    width: 80%;
-    margin: 60px auto;
-    padding: 50px 0;
-}
-
-#iphone img {
-    max-height: 600px;
-}
-
-@media screen and (max-width: 780px) {
-    #iphone .text-right {
-        text-align: center;
-    }
-
-    #iphone .align-absolute {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: none;
-        width: 100%;
-        margin: 30px auto;
-    }
-}
-
 
 /* 50 righe */
 #iphone-fixed {
-    width: 80%;
-    height: 700px;
-    margin: 0 auto;
+  width: 80%;
+  height: 700px;
+  margin: 0 auto;
 }
 
 .iphone-fixed-text {
-    position: absolute;
-    top: 300px;
-    left: 100px;
+  position: absolute;
+  top: 300px;
+  left: 100px;
 }
 
 .iphone-fixed-img {
-    position: absolute;
-    top: 10px;
-    right: 0;
+  position: absolute;
+  top: 10px;
+  right: 0;
 }
 
 .iphone-fixed-img img {
-    max-height: 600px;
+  max-height: 600px;
 }
 
 @media screen and (max-width: 780px) {
-    .iphone-fixed-text {
-        margin-bottom: 50px;
-    }
+  .iphone-fixed-text {
+    margin-bottom: 50px;
+  }
 
-    .iphone-fixed-text,
-    .iphone-fixed-img {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: none;
-        width: 100%;
-        text-align: center;
-    }
+  .iphone-fixed-text,
+  .iphone-fixed-img {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    text-align: center;
+  }
 
-    #iphone-fixed {
-        padding: 50px 0;
-        height: auto;
-    }
+  #iphone-fixed {
+    padding: 50px 0;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 780px) and (max-width: 1200px) {
-    .iphone-fixed-text {
-        position: absolute;
-        top: 200px;
-        left: 50px;
-    }
+  .iphone-fixed-text {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+  }
 
-    .iphone-fixed-img {
-        position: absolute;
-        top: 10px;
-        right: 0;
-    }
+  .iphone-fixed-img {
+    position: absolute;
+    top: 10px;
+    right: 0;
+  }
 }
+
+/* contro 22 righe */
+#iphone {
+  width: 80%;
+  margin: 60px auto;
+  padding: 50px 0;
+}
+
+#iphone img {
+  max-height: 600px;
+}
+
+@media screen and (max-width: 780px) {
+  #iphone .text-right {
+    text-align: center;
+  }
+
+  #iphone .align-absolute {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    margin: 30px auto;
+  }
+}
+
+/* Se cambiamo la grandezza del testo? */
+/* .p-iphone {
+  font-size: 40px;
+  line-height: 60px;
+} */
 
 /* se fissiamo un'altezza e poi aggiungiamo testo che succede? */
 #info {
-    height: 300px;
+  height: 50vh;
+  /* height: 300px; */
 }
 
 #info .icon {
-    font-size: 220%;
-    line-height: 170%;
-    color: #0081FF;
+  font-size: 220%;
+  line-height: 170%;
+  color: #0081FF;
+}
+
+#iphone-live {
+  width: 100%;
+  height: 400px;
+}
+
+/* LIVE */
+.iphone-background {
+  background-image: url('../img/iphone.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
 }
